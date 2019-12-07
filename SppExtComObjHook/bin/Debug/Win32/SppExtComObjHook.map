@@ -1,0 +1,545 @@
+ SppExtComObjHook
+
+ Timestamp is 5deb087b (Sat Dec  7 09:03:39 2019)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00010000H .textbss                DATA
+ 0002:00000000 00001880H .text                   CODE
+ 0002:00001880 00006582H .text$mn                CODE
+ 0003:00000000 00002b10H .rdata                  DATA
+ 0003:00002b10 00000164H .edata                  DATA
+ 0003:00002c74 000001c4H .rdata$zzzdbg           DATA
+ 0004:00000000 00000598H .data                   DATA
+ 0004:00000598 0000014bH .bss                    DATA
+ 0005:00000000 000001d4H .idata$5                DATA
+ 0005:000001d4 0000003cH .idata$2                DATA
+ 0005:00000210 00000014H .idata$3                DATA
+ 0005:00000224 000001d4H .idata$4                DATA
+ 0005:000003f8 0000063eH .idata$6                DATA
+ 0006:00000000 0000015cH .msvcjmc                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___enclave_config          00000000     <absolute>
+ 0000:00000000       ___hybrid_code_map_count   00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_table     00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
+ 0000:00000000       ___hybrid_code_map         00000000     <absolute>
+ 0000:00000000       ___guard_iat_count         00000000     <absolute>
+ 0000:00000000       ___hybrid_auxiliary_iat    00000000     <absolute>
+ 0000:00000000       ___guard_iat_table         00000000     <absolute>
+ 0000:00000000       ___volatile_metadata       00000000     <absolute>
+ 0000:00000000       ___dynamic_value_reloc_table 00000000     <absolute>
+ 0000:00000000       ___AbsoluteZero            00000000     <absolute>
+ 0000:00000000       ___guard_fids_count        00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_count     00000000     <absolute>
+ 0000:00000100       ___guard_flags             00000100     <absolute>
+ 0001:00000000       __enc$textbss$begin        10001000     <linker-defined>
+ 0001:00010000       __enc$textbss$end          10011000     <linker-defined>
+ 0002:00000530       __allmul                   10011530 f   msvcrt:llmul.obj
+ 0002:00000580       __aulldiv                  10011580 f   msvcrt:ulldiv.obj
+ 0002:00000610       __allrem                   10011610 f   msvcrt:llrem.obj
+ 0002:000006f0       __chkstk                   100116f0 f   msvcrt:chkstk.obj
+ 0002:000006f0       __alloca_probe             100116f0     msvcrt:chkstk.obj
+ 0002:00001880       ?AesDecryptBlock@@YGXPAEPBE@Z 10012880 f   crypto.obj
+ 0002:00001950       ?AesDecryptMessage@@YGHKPBEPAEPAK@Z 10012950 f   crypto.obj
+ 0002:000019d0       ?AesDecryptMessageV5@@YGHPBEPAEPAK@Z 100129d0 f   crypto.obj
+ 0002:00001b00       ?AesDecryptMessageV6@@YGHPBEPAEPAK@Z 10012b00 f   crypto.obj
+ 0002:00001ca0       ?AesEncryptBlock@@YGXPAEPBE@Z 10012ca0 f   crypto.obj
+ 0002:00001d70       ?AesEncryptMessage@@YGHKPBEPAEPAKK@Z 10012d70 f   crypto.obj
+ 0002:00001e00       ?AesEncryptMessageV5@@YGHPBEPAEPAKK@Z 10012e00 f   crypto.obj
+ 0002:00001f30       ?AesEncryptMessageV6@@YGHPBEPAEPAKK@Z 10012f30 f   crypto.obj
+ 0002:00002040       ?GetHmacKey@@YGXPB_KPAE@Z  10013040 f   crypto.obj
+ 0002:000020e0       ?GetHmacSha256@@YGHPBEK0PAE@Z 100130e0 f   crypto.obj
+ 0002:00002290       ?GetRandomBytes@@YGHPAEK@Z 10013290 f   crypto.obj
+ 0002:00002340       ?GetSha256Hash@@YGHPBEKPAE@Z 10013340 f   crypto.obj
+ 0002:00002450       ?GetV4Cmac@@YGXHPBEPAE@Z   10013450 f   crypto.obj
+ 0002:00002530       ?Hash@@YGXPBEPAE@Z         10013530 f   crypto.obj
+ 0002:00002620       ?InvMixColumns@@YGXPAE@Z   10013620 f   crypto.obj
+ 0002:00002760       ?InvShiftRows@@YGXPAE@Z    10013760 f   crypto.obj
+ 0002:000027e0       ?InvSubBytes@@YGXPAE@Z     100137e0 f   crypto.obj
+ 0002:00002840       ?MixColumns@@YGXPAE@Z      10013840 f   crypto.obj
+ 0002:00002910       ?ShiftRows@@YGXPAE@Z       10013910 f   crypto.obj
+ 0002:00002990       ?SubBytes@@YGXPAE@Z        10013990 f   crypto.obj
+ 0002:000029f0       ?XorBuffer@@YGXPBEPAE@Z    100139f0 f   crypto.obj
+ 0002:00002a60       @__CheckForDebuggerJustMyCode@4 10013a60 f i crypto.obj
+ 0002:00002a60       __JustMyCode_Default       10013a60 f i crypto.obj
+ 0002:00002a70       ?ActivationResponse@@YGHHPAEPAHPAPAE@Z 10013a70 f   kms.obj
+ 0002:00002af0       ?CreateBaseResponse@@YGXPAUKMSBaseRequest@@PAUKMSBaseResponse@@@Z 10013af0 f   kms.obj
+ 0002:00003360       ?CreateResponse@@YGPAEHPAEPAHPAUKMSBaseRequest@@PAUKMSBaseResponse@@@Z 10014360 f   kms.obj
+ 0002:00003410       ?CreateResponseV4@@YGPAEHPAEPAHPAUKMSBaseRequest@@PAUKMSBaseResponse@@@Z 10014410 f   kms.obj
+ 0002:00003540       ?CreateResponseV6@@YGPAEHPAEPAHPAUKMSBaseRequest@@PAUKMSBaseResponse@@@Z 10014540 f   kms.obj
+ 0002:00003970       ?GenerateRandomKMSPID@@YGXQA_WQAUKMSBaseRequest@@@Z 10014970 f   kms.obj
+ 0002:00003b40       ?GetKMSHost@@YGXQAUKMSBaseRequest@@PAH1@Z 10014b40 f   kms.obj
+ 0002:00004820       ?GetKMSPID@@YGXQA_WQAUKMSBaseRequest@@@Z 10015820 f   kms.obj
+ 0002:00004aa0       ?PackBaseResponse@@YGHPAEPBUKMSBaseResponse@@@Z 10015aa0 f   kms.obj
+ 0002:00004b40       ?ReadRegParameter@@YGJPAUHKEY__@@PB_WPAKKK@Z 10015b40 f   kms.obj
+ 0002:00004ce0       ?ReadRegParameter@@YGJPAUHKEY__@@PB_WPA_K_K3@Z 10015ce0 f   kms.obj
+ 0002:00004e70       ?ReadRegParameter@@YGJPAUHKEY__@@PB_WPA_WI@Z 10015e70 f   kms.obj
+ 0002:00004fa0       ?ReadRegistrySettings@@YGKXZ 10015fa0 f   kms.obj
+ 0002:000051c0       _MIDL_user_allocate@4      100161c0 f   kms.obj
+ 0002:00005200       _MIDL_user_free@4          10016200 f   kms.obj
+ 0002:00005240       ?LoadLibraryW_Hook@@YGPAUHINSTANCE__@@PB_W@Z 10016240 f   SppExtComObjHook.obj
+ 0002:000053a0       ?RpcStringBindingComposeW_Hook@@YGJPA_W0000PAPA_W@Z 100163a0 f   SppExtComObjHook.obj
+ 0002:00005560       ?RpcBindingFromStringBindingW_Hook@@YGJPA_WPAPAX@Z 10016560 f   SppExtComObjHook.obj
+ 0002:00005700       ?RpcStringFreeW_Hook@@YGJPAPA_W@Z 10016700 f   SppExtComObjHook.obj
+ 0002:000057e0       ?RpcBindingFree_Hook@@YGJPAPAX@Z 100167e0 f   SppExtComObjHook.obj
+ 0002:000058c0       ?RpcAsyncInitializeHandle_Hook@@YGJPAU_RPC_ASYNC_STATE@@I@Z 100168c0 f   SppExtComObjHook.obj
+ 0002:00005990       ?RpcAsyncCompleteCall_Hook@@YGJPAU_RPC_ASYNC_STATE@@PAX@Z 10016990 f   SppExtComObjHook.obj
+ 0002:00005a60       ?NdrAsyncClientCall_Hook@@YA?AT_CLIENT_CALL_RETURN@@PBU_MIDL_STUB_DESC@@PBEZZ 10016a60 f   SppExtComObjHook.obj
+ 0002:00005da0       ?NdrClientCall2_Hook@@YA?AT_CLIENT_CALL_RETURN@@PBU_MIDL_STUB_DESC@@PBEZZ 10016da0 f   SppExtComObjHook.obj
+ 0002:00006070       ?GetImportDescriptor@@YGPAU_IMAGE_IMPORT_DESCRIPTOR@@PAUHINSTANCE__@@@Z 10017070 f   SppExtComObjHook.obj
+ 0002:00006130       ?PatchIAT@@YGHPAUHINSTANCE__@@@Z 10017130 f   SppExtComObjHook.obj
+ 0002:000061b0       ?PatchIATInternal@@YGHPAUHINSTANCE__@@PAU_APIHook@@@Z 100171b0 f   SppExtComObjHook.obj
+ 0002:000063c0       _DllMain@12                100173c0 f   SppExtComObjHook.obj
+ 0002:000064a0       ?FindProcessIdByName@@YGHPB_WPAK@Z 100174a0 f   SppExtComObjPatcher.obj
+ 0002:00006590       ?InjectDll@@YGHPB_WK@Z     10017590 f   SppExtComObjPatcher.obj
+ 0002:00006740       ?PatcherMain@@YGXPAUHWND__@@PAUHINSTANCE__@@PA_WH@Z 10017740 f   SppExtComObjPatcher.obj
+ 0002:00006a30       ?PauseResumeThreadList@@YGHKH@Z 10017a30 f   SppExtComObjPatcher.obj
+ 0002:00006b40       ?wcsstr@@YAPA_WPA_WPB_W@Z  10017b40 f i SppExtComObjPatcher.obj
+ 0002:00006b74       _memcpy                    10017b74 f   msvcrt:msvcrt.dll
+ 0002:00006b7a       _memset                    10017b7a f   msvcrt:msvcrt.dll
+ 0002:00006b80       __errno                    10017b80 f   msvcrt:msvcrt.dll
+ 0002:00006b86       _memcmp                    10017b86 f   msvcrt:msvcrt.dll
+ 0002:00006b8c       _wcsrchr                   10017b8c f   msvcrt:msvcrt.dll
+ 0002:00006b92       _wcscpy_s                  10017b92 f   msvcrt:msvcrt.dll
+ 0002:00006b98       _wcslen                    10017b98 f   msvcrt:msvcrt.dll
+ 0002:00006b9e       __wcsicmp                  10017b9e f   msvcrt:msvcrt.dll
+ 0002:00006ba4       _wcstoul                   10017ba4 f   msvcrt:msvcrt.dll
+ 0002:00006baa       _srand                     10017baa f   msvcrt:msvcrt.dll
+ 0002:00006bb0       _rand                      10017bb0 f   msvcrt:msvcrt.dll
+ 0002:00006bb6       __localtime64_s            10017bb6 f   msvcrt:msvcrt.dll
+ 0002:00006bbc       __time64                   10017bbc f   msvcrt:msvcrt.dll
+ 0002:00006bc2       _swprintf_s                10017bc2 f   msvcrt:msvcrt.dll
+ 0002:00006bc8       _wcsstr                    10017bc8 f   msvcrt:msvcrt.dll
+ 0002:00006bce       __wcsupr_s                 10017bce f   msvcrt:msvcrt.dll
+ 0002:00006bd4       __stricmp                  10017bd4 f   msvcrt:msvcrt.dll
+ 0002:00006bda       _OutputDebugStringW@4      10017bda f   kernel32:KERNEL32.dll
+ 0002:00006be0       _HeapAlloc@12              10017be0 f   kernel32:KERNEL32.dll
+ 0002:00006be6       _HeapFree@12               10017be6 f   kernel32:KERNEL32.dll
+ 0002:00006bec       _GetProcessHeap@0          10017bec f   kernel32:KERNEL32.dll
+ 0002:00006bf2       _GetModuleFileNameW@12     10017bf2 f   kernel32:KERNEL32.dll
+ 0002:00006bf8       _FileTimeToSystemTime@8    10017bf8 f   kernel32:KERNEL32.dll
+ 0002:00006bfe       _GetSystemDefaultLCID@0    10017bfe f   kernel32:KERNEL32.dll
+ 0002:00006c04       _GetLastError@0            10017c04 f   kernel32:KERNEL32.dll
+ 0002:00006c0a       _SetLastError@4            10017c0a f   kernel32:KERNEL32.dll
+ 0002:00006c10       _SetEvent@4                10017c10 f   kernel32:KERNEL32.dll
+ 0002:00006c16       _GetCurrentProcess@0       10017c16 f   kernel32:KERNEL32.dll
+ 0002:00006c1c       _GetCurrentThread@0        10017c1c f   kernel32:KERNEL32.dll
+ 0002:00006c22       _VirtualProtect@16         10017c22 f   kernel32:KERNEL32.dll
+ 0002:00006c28       _WriteProcessMemory@20     10017c28 f   kernel32:KERNEL32.dll
+ 0002:00006c2e       _DisableThreadLibraryCalls@4 10017c2e f   kernel32:KERNEL32.dll
+ 0002:00006c34       _GetModuleHandleA@4        10017c34 f   kernel32:KERNEL32.dll
+ 0002:00006c3a       _GetProcAddress@8          10017c3a f   kernel32:KERNEL32.dll
+ 0002:00006c40       _DebugActiveProcessStop@4  10017c40 f   kernel32:KERNEL32.dll
+ 0002:00006c46       _CloseHandle@4             10017c46 f   kernel32:KERNEL32.dll
+ 0002:00006c4c       _WaitForSingleObject@8     10017c4c f   kernel32:KERNEL32.dll
+ 0002:00006c52       _Sleep@4                   10017c52 f   kernel32:KERNEL32.dll
+ 0002:00006c58       _ExitProcess@4             10017c58 f   kernel32:KERNEL32.dll
+ 0002:00006c5e       _GetExitCodeProcess@8      10017c5e f   kernel32:KERNEL32.dll
+ 0002:00006c64       _CreateRemoteThread@28     10017c64 f   kernel32:KERNEL32.dll
+ 0002:00006c6a       _OpenThread@12             10017c6a f   kernel32:KERNEL32.dll
+ 0002:00006c70       _GetExitCodeThread@8       10017c70 f   kernel32:KERNEL32.dll
+ 0002:00006c76       _SuspendThread@4           10017c76 f   kernel32:KERNEL32.dll
+ 0002:00006c7c       _ResumeThread@4            10017c7c f   kernel32:KERNEL32.dll
+ 0002:00006c82       _CreateProcessW@40         10017c82 f   kernel32:KERNEL32.dll
+ 0002:00006c88       _GetStartupInfoW@4         10017c88 f   kernel32:KERNEL32.dll
+ 0002:00006c8e       _OpenProcess@12            10017c8e f   kernel32:KERNEL32.dll
+ 0002:00006c94       _VirtualAllocEx@20         10017c94 f   kernel32:KERNEL32.dll
+ 0002:00006c9a       _VirtualFreeEx@16          10017c9a f   kernel32:KERNEL32.dll
+ 0002:00006ca0       _CreateToolhelp32Snapshot@8 10017ca0 f   kernel32:KERNEL32.dll
+ 0002:00006ca6       _Process32FirstW@8         10017ca6 f   kernel32:KERNEL32.dll
+ 0002:00006cac       _Process32NextW@8          10017cac f   kernel32:KERNEL32.dll
+ 0002:00006cb2       _Thread32First@8           10017cb2 f   kernel32:KERNEL32.dll
+ 0002:00006cb8       _Thread32Next@8            10017cb8 f   kernel32:KERNEL32.dll
+ 0002:00006cbe       _CryptAcquireContextW@20   10017cbe f   advapi32:ADVAPI32.dll
+ 0002:00006cc4       _CryptReleaseContext@8     10017cc4 f   advapi32:ADVAPI32.dll
+ 0002:00006cca       _CryptDestroyKey@4         10017cca f   advapi32:ADVAPI32.dll
+ 0002:00006cd0       _CryptSetKeyParam@16       10017cd0 f   advapi32:ADVAPI32.dll
+ 0002:00006cd6       _CryptSetHashParam@16      10017cd6 f   advapi32:ADVAPI32.dll
+ 0002:00006cdc       _CryptGetHashParam@20      10017cdc f   advapi32:ADVAPI32.dll
+ 0002:00006ce2       _CryptGenRandom@12         10017ce2 f   advapi32:ADVAPI32.dll
+ 0002:00006ce8       _CryptImportKey@24         10017ce8 f   advapi32:ADVAPI32.dll
+ 0002:00006cee       _CryptEncrypt@28           10017cee f   advapi32:ADVAPI32.dll
+ 0002:00006cf4       _CryptDecrypt@24           10017cf4 f   advapi32:ADVAPI32.dll
+ 0002:00006cfa       _CryptCreateHash@20        10017cfa f   advapi32:ADVAPI32.dll
+ 0002:00006d00       _CryptHashData@16          10017d00 f   advapi32:ADVAPI32.dll
+ 0002:00006d06       _CryptDestroyHash@4        10017d06 f   advapi32:ADVAPI32.dll
+ 0002:00006d0c       _RegCloseKey@4             10017d0c f   advapi32:ADVAPI32.dll
+ 0002:00006d12       _RegOpenKeyExW@20          10017d12 f   advapi32:ADVAPI32.dll
+ 0002:00006d18       _RegQueryValueExW@24       10017d18 f   advapi32:ADVAPI32.dll
+ 0003:00000448       ??_C@_1BA@HLGGGPNC@?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AAs@ 10019448     kms.obj
+ 0003:0000045c       ??_C@_1BG@HBCDHDOH@?$AAO?$AAf?$AAf?$AAi?$AAc?$AAe?$AA2?$AA0?$AA1?$AA0@ 1001945c     kms.obj
+ 0003:00000478       ??_C@_1BG@GDJGNMAJ@?$AAO?$AAf?$AAf?$AAi?$AAc?$AAe?$AA2?$AA0?$AA1?$AA3@ 10019478     kms.obj
+ 0003:00000494       ??_C@_1BG@FEEICMDL@?$AAO?$AAf?$AAf?$AAi?$AAc?$AAe?$AA2?$AA0?$AA1?$AA6@ 10019494     kms.obj
+ 0003:000004b0       ??_C@_1BG@MCLDMGN@?$AAO?$AAf?$AAf?$AAi?$AAc?$AAe?$AA2?$AA0?$AA1?$AA9@ 100194b0     kms.obj
+ 0003:00000820       ??_C@_1EO@DKENENAL@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAP?$AAr?$AAo?$AAt@ 10019820     kms.obj
+ 0003:00000880       ??_C@_1EI@JCFEPELC@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAL?$AAi?$AAc?$AAe@ 10019880     kms.obj
+ 0003:000008d8       ??_C@_1FI@CLJAJGPJ@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAR?$AAe?$AAm?$AAa@ 100198d8     kms.obj
+ 0003:00000948       ??_C@_1EI@DDFIFPLB@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAV?$AAM?$AA?5?$AA?1@ 10019948     kms.obj
+ 0003:000009a0       ??_C@_1LO@KECHFOCG@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAA?$AAp?$AAp?$AAl@ 100199a0     kms.obj
+ 0003:00000a88       ??_C@_1LO@EEINMAFO@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAA?$AAc?$AAt?$AAi@ 10019a88     kms.obj
+ 0003:00000b70       ??_C@_1LO@DJDIIKK@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAK?$AAM?$AAS?$AA?5@ 10019b70     kms.obj
+ 0003:00000c58       ??_C@_1LO@PGPANPPH@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAC?$AAl?$AAi?$AAe@ 10019c58     kms.obj
+ 0003:00000d40       ??_C@_1LO@LCFIDJEJ@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAP?$AAr?$AAe?$AAv@ 10019d40     kms.obj
+ 0003:00000e28       ??_C@_1EK@NGPBGECF@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAW?$AAo?$AAr?$AAk@ 10019e28     kms.obj
+ 0003:00000e80       ??_C@_1HO@HGDMBCIA@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAT?$AAi?$AAm?$AAe@ 10019e80     kms.obj
+ 0003:00000f18       ??_C@_1GI@GPJNJLNN@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAR?$AAe?$AAq?$AAu@ 10019f18     kms.obj
+ 0003:00000f98       ??_C@_1GM@HGJFMJBH@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAR?$AAe?$AAs?$AAp@ 10019f98     kms.obj
+ 0003:00001020       ??_C@_1FI@BPHNMHII@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAA?$AAc?$AAt?$AAi@ 1001a020     kms.obj
+ 0003:00001090       ??_C@_1FI@PBPELGEG@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAR?$AAe?$AAn?$AAe@ 1001a090     kms.obj
+ 0003:00001100       ??_C@_1EK@HMAHJFAI@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAK?$AAM?$AAS?$AA?5@ 1001a100     kms.obj
+ 0003:00001158       ??_C@_1FE@MIJEHOOC@?$AA?$FL?$AAK?$AAM?$AAS?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?$FN?$AA?5?$AAK?$AAM?$AAS?$AA?5@ 1001a158     kms.obj
+ 0003:000011c0       ??_C@_1FK@KHOLGLLO@?$AA?$CF?$AA0?$AA5?$AAu?$AA?9?$AA?$CF?$AA0?$AA5?$AAu?$AA?9?$AA?$CF?$AA0?$AA3?$AAu?$AA?9@ 1001a1c0     kms.obj
+ 0003:0000122c       ??_C@_1O@PALHKBLM@?$AAR?$AAa?$AAn?$AAd?$AAo?$AAm@ 1001a22c     kms.obj
+ 0003:00001240       ??_C@_1FE@EIPPBOAJ@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a240     kms.obj
+ 0003:000012a8       ??_C@_1FO@OLPBKEED@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a2a8     kms.obj
+ 0003:00001318       ??_C@_1GA@FEEJLOL@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a318     kms.obj
+ 0003:00001390       ??_C@_1FE@JOKGPNBE@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a390     kms.obj
+ 0003:000013f8       ??_C@_1JE@NKIDFBLD@?$AAS?$AAO?$AAF?$AAT?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs@ 1001a3f8     kms.obj
+ 0003:000014ac       ??_C@_1M@DFKENGJN@?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs@ 1001a4ac     kms.obj
+ 0003:000014c0       ??_C@_1FE@OFHIDGMN@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a4c0     kms.obj
+ 0003:00001524       ??_C@_1BM@FHNOIDDK@?$AAK?$AAM?$AAS?$AA_?$AAE?$AAm?$AAu?$AAl?$AAa?$AAt?$AAi?$AAo?$AAn@ 1001a524     kms.obj
+ 0003:00001548       ??_C@_1CO@CHIGJHAC@?$AAK?$AAM?$AAS?$AA_?$AAA?$AAc?$AAt?$AAi?$AAv?$AAa?$AAt?$AAi?$AAo?$AAn?$AAI@ 1001a548     kms.obj
+ 0003:00001580       ??_C@_1CI@EACHPDAB@?$AAK?$AAM?$AAS?$AA_?$AAR?$AAe?$AAn?$AAe?$AAw?$AAa?$AAl?$AAI?$AAn?$AAt?$AAe@ 1001a580     kms.obj
+ 0003:000015b0       ??_C@_1BC@DKAIFGB@?$AAK?$AAM?$AAS?$AA_?$AAH?$AAW?$AAI?$AAD@ 1001a5b0     kms.obj
+ 0003:000015c8       ??_C@_0N@MDJJJHMB@kernel32?4dll@ 1001a5c8     SppExtComObjHook.obj
+ 0003:000015d8       ??_C@_0N@KCFDJLIF@LoadLibraryW@ 1001a5d8     SppExtComObjHook.obj
+ 0003:000015e8       ??_C@_0L@IKBIFNGI@rpcrt4?4dll@ 1001a5e8     SppExtComObjHook.obj
+ 0003:000015f8       ??_C@_0BJ@IIAFMCPB@RpcStringBindingComposeW@ 1001a5f8     SppExtComObjHook.obj
+ 0003:00001618       ??_C@_0BN@HIKGGOEI@RpcBindingFromStringBindingW@ 1001a618     SppExtComObjHook.obj
+ 0003:0000163c       ??_C@_0P@DGHKDIOM@RpcStringFreeW@ 1001a63c     SppExtComObjHook.obj
+ 0003:00001650       ??_C@_0P@CPMKCJMK@RpcBindingFree@ 1001a650     SppExtComObjHook.obj
+ 0003:00001664       ??_C@_0BJ@NFGKIHEA@RpcAsyncInitializeHandle@ 1001a664     SppExtComObjHook.obj
+ 0003:00001684       ??_C@_0BF@JMLJHIHJ@RpcAsyncCompleteCall@ 1001a684     SppExtComObjHook.obj
+ 0003:000016a0       ??_C@_0BD@GLHCKACO@NdrAsyncClientCall@ 1001a6a0     SppExtComObjHook.obj
+ 0003:000016b8       ??_C@_0P@ELNNJCED@NdrClientCall2@ 1001a6b8     SppExtComObjHook.obj
+ 0003:000016d0       ??_C@_1IM@KEMAINMH@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a6d0     SppExtComObjHook.obj
+ 0003:00001778       ??_C@_1BK@MGFBEOIA@?$AAO?$AAS?$AAP?$AAP?$AAO?$AAB?$AAJ?$AAS?$AA?4?$AAD?$AAL?$AAL@ 1001a778     SppExtComObjHook.obj
+ 0003:00001798       ??_C@_1BI@IDEMALCL@?$AAS?$AAP?$AAP?$AAO?$AAB?$AAJ?$AAS?$AA?4?$AAD?$AAL?$AAL@ 1001a798     SppExtComObjHook.obj
+ 0003:000017b8       ??_C@_1HK@KJBODIAK@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a7b8     SppExtComObjHook.obj
+ 0003:00001850       ??_C@_1ME@JMHPJKGI@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a850     SppExtComObjHook.obj
+ 0003:0000193c       ??_C@_1BK@BPGFLIHL@?$AAn?$AAc?$AAa?$AAc?$AAn?$AA_?$AAi?$AAp?$AA_?$AAt?$AAc?$AAp@ 1001a93c     SppExtComObjHook.obj
+ 0003:00001960       ??_C@_1HO@DNFNIJBK@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001a960     SppExtComObjHook.obj
+ 0003:000019f8       ??_C@_1BE@LJLJKOKP@?$AA?$CF?$AAs?$AA?3?$AA?$CF?$AAs?$AA?$FL?$AA?$CF?$AAs?$AA?$FN@ 1001a9f8     SppExtComObjHook.obj
+ 0003:00001a10       ??_C@_1BE@KGBJBGOH@?$AA1?$AA2?$AA7?$AA?4?$AA0?$AA?4?$AA0?$AA?4?$AA1@ 1001aa10     SppExtComObjHook.obj
+ 0003:00001a28       ??_C@_1GO@DBPOPFCA@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001aa28     SppExtComObjHook.obj
+ 0003:00001ab0       ??_C@_1HO@OCCPDHFI@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001aab0     SppExtComObjHook.obj
+ 0003:00001b48       ??_C@_1MG@BBLFGBJD@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001ab48     SppExtComObjHook.obj
+ 0003:00001c38       ??_C@_1FE@FENPFILD@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001ac38     SppExtComObjHook.obj
+ 0003:00001ca0       ??_C@_1EO@KEMOBAPK@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001aca0     SppExtComObjHook.obj
+ 0003:00001d00       ??_C@_1HG@CMDJOPCN@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001ad00     SppExtComObjHook.obj
+ 0003:00001d90       ??_C@_1HG@EPAGGJO@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001ad90     SppExtComObjHook.obj
+ 0003:00001e20       ??_C@_1FM@FFJCOKGI@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001ae20     SppExtComObjHook.obj
+ 0003:00001e90       ??_C@_1BFE@HBFGDEEA@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001ae90     SppExtComObjHook.obj
+ 0003:00002028       ??_C@_1HE@KAFLNIFK@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001b028     SppExtComObjHook.obj
+ 0003:000020b8       ??_C@_1HI@HFEFOPKC@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001b0b8     SppExtComObjHook.obj
+ 0003:00002148       ??_C@_1HG@MBEKBOEL@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001b148     SppExtComObjHook.obj
+ 0003:000021d8       ??_C@_1FE@FPIONGCM@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001b1d8     SppExtComObjHook.obj
+ 0003:00002240       ??_C@_1BDG@BEEGGHPN@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001b240     SppExtComObjHook.obj
+ 0003:000023b8       ??_C@_1KM@MANCCKDA@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001b3b8     SppExtComObjHook.obj
+ 0003:00002488       ??_C@_1GC@IBFPKKP@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo@ 1001b488     SppExtComObjHook.obj
+ 0003:00002500       ??_C@_1CC@DCIKONKO@?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AA?4?$AAe?$AAx@ 1001b500     SppExtComObjPatcher.obj
+ 0003:00002528       ??_C@_1BG@BKPLIDKL@?$AAs?$AAp?$AAp?$AAs?$AAv?$AAc?$AA?4?$AAe?$AAx?$AAe@ 1001b528     SppExtComObjPatcher.obj
+ 0003:00002548       ??_C@_1HO@HOPFCKAP@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAP?$AAa@ 1001b548     SppExtComObjPatcher.obj
+ 0003:000025e0       ??_C@_1JE@CMJJFAAH@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAP?$AAa@ 1001b5e0     SppExtComObjPatcher.obj
+ 0003:00002698       ??_C@_1IM@BJLKIDDG@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAP?$AAa@ 1001b698     SppExtComObjPatcher.obj
+ 0003:00002740       ??_C@_1KA@LBMDPGGJ@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAP?$AAa@ 1001b740     SppExtComObjPatcher.obj
+ 0003:00002800       ??_C@_1CK@EFMDHPMC@?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAH?$AAo?$AAo@ 1001b800     SppExtComObjPatcher.obj
+ 0003:00002838       ??_C@_1HK@HKOHBJBH@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAP?$AAa@ 1001b838     SppExtComObjPatcher.obj
+ 0003:000028d0       ??_C@_1IC@ECIEFKMH@?$AA?$FL?$AAS?$AAp?$AAp?$AAE?$AAx?$AAt?$AAC?$AAo?$AAm?$AAO?$AAb?$AAj?$AAP?$AAa@ 1001b8d0     SppExtComObjPatcher.obj
+ 0004:00000000       ?HmacKeyblob@@3UHMAC_KEYBLOB@@A 1001c000     crypto.obj
+ 0004:00000028       ?Settings@@3UKMSServerSettings@@A 1001c028     kms.obj
+ 0004:000002c0       ?AppIDList@@3PAUGUIDName@@A 1001c2c0     kms.obj
+ 0004:000003d8       ?APIHooks@@3PAU_APIHook@@A 1001c3d8     SppExtComObjHook.obj
+ 0004:00000598       ?newRpcConnection@@3U_RpcConnection@@A 1001c598     SppExtComObjHook.obj
+ 0005:00000000       __imp__CryptEncrypt@28     1001d000     advapi32:ADVAPI32.dll
+ 0005:00000004       __imp__RegQueryValueExW@24 1001d004     advapi32:ADVAPI32.dll
+ 0005:00000008       __imp__RegOpenKeyExW@20    1001d008     advapi32:ADVAPI32.dll
+ 0005:0000000c       __imp__RegCloseKey@4       1001d00c     advapi32:ADVAPI32.dll
+ 0005:00000010       __imp__CryptDestroyHash@4  1001d010     advapi32:ADVAPI32.dll
+ 0005:00000014       __imp__CryptHashData@16    1001d014     advapi32:ADVAPI32.dll
+ 0005:00000018       __imp__CryptCreateHash@20  1001d018     advapi32:ADVAPI32.dll
+ 0005:0000001c       __imp__CryptDecrypt@24     1001d01c     advapi32:ADVAPI32.dll
+ 0005:00000020       __imp__CryptAcquireContextW@20 1001d020     advapi32:ADVAPI32.dll
+ 0005:00000024       __imp__CryptImportKey@24   1001d024     advapi32:ADVAPI32.dll
+ 0005:00000028       __imp__CryptGenRandom@12   1001d028     advapi32:ADVAPI32.dll
+ 0005:0000002c       __imp__CryptGetHashParam@20 1001d02c     advapi32:ADVAPI32.dll
+ 0005:00000030       __imp__CryptSetHashParam@16 1001d030     advapi32:ADVAPI32.dll
+ 0005:00000034       __imp__CryptSetKeyParam@16 1001d034     advapi32:ADVAPI32.dll
+ 0005:00000038       __imp__CryptDestroyKey@4   1001d038     advapi32:ADVAPI32.dll
+ 0005:0000003c       __imp__CryptReleaseContext@8 1001d03c     advapi32:ADVAPI32.dll
+ 0005:00000040       \177ADVAPI32_NULL_THUNK_DATA 1001d040     advapi32:ADVAPI32.dll
+ 0005:00000078       __imp__Thread32Next@8      1001d078     kernel32:KERNEL32.dll
+ 0005:0000007c       __imp__OutputDebugStringW@4 1001d07c     kernel32:KERNEL32.dll
+ 0005:00000080       __imp__HeapAlloc@12        1001d080     kernel32:KERNEL32.dll
+ 0005:00000084       __imp__HeapFree@12         1001d084     kernel32:KERNEL32.dll
+ 0005:00000088       __imp__GetProcessHeap@0    1001d088     kernel32:KERNEL32.dll
+ 0005:0000008c       __imp__GetModuleFileNameW@12 1001d08c     kernel32:KERNEL32.dll
+ 0005:00000090       __imp__FileTimeToSystemTime@8 1001d090     kernel32:KERNEL32.dll
+ 0005:00000094       __imp__GetSystemDefaultLCID@0 1001d094     kernel32:KERNEL32.dll
+ 0005:00000098       __imp__GetLastError@0      1001d098     kernel32:KERNEL32.dll
+ 0005:0000009c       __imp__SetLastError@4      1001d09c     kernel32:KERNEL32.dll
+ 0005:000000a0       __imp__SetEvent@4          1001d0a0     kernel32:KERNEL32.dll
+ 0005:000000a4       __imp__GetCurrentProcess@0 1001d0a4     kernel32:KERNEL32.dll
+ 0005:000000a8       __imp__GetCurrentThread@0  1001d0a8     kernel32:KERNEL32.dll
+ 0005:000000ac       __imp__VirtualProtect@16   1001d0ac     kernel32:KERNEL32.dll
+ 0005:000000b0       __imp__WriteProcessMemory@20 1001d0b0     kernel32:KERNEL32.dll
+ 0005:000000b4       __imp__DisableThreadLibraryCalls@4 1001d0b4     kernel32:KERNEL32.dll
+ 0005:000000b8       __imp__GetModuleHandleA@4  1001d0b8     kernel32:KERNEL32.dll
+ 0005:000000bc       __imp__GetProcAddress@8    1001d0bc     kernel32:KERNEL32.dll
+ 0005:000000c0       __imp__DebugActiveProcessStop@4 1001d0c0     kernel32:KERNEL32.dll
+ 0005:000000c4       __imp__CloseHandle@4       1001d0c4     kernel32:KERNEL32.dll
+ 0005:000000c8       __imp__WaitForSingleObject@8 1001d0c8     kernel32:KERNEL32.dll
+ 0005:000000cc       __imp__Sleep@4             1001d0cc     kernel32:KERNEL32.dll
+ 0005:000000d0       __imp__ExitProcess@4       1001d0d0     kernel32:KERNEL32.dll
+ 0005:000000d4       __imp__GetExitCodeProcess@8 1001d0d4     kernel32:KERNEL32.dll
+ 0005:000000d8       __imp__CreateRemoteThread@28 1001d0d8     kernel32:KERNEL32.dll
+ 0005:000000dc       __imp__OpenThread@12       1001d0dc     kernel32:KERNEL32.dll
+ 0005:000000e0       __imp__GetExitCodeThread@8 1001d0e0     kernel32:KERNEL32.dll
+ 0005:000000e4       __imp__SuspendThread@4     1001d0e4     kernel32:KERNEL32.dll
+ 0005:000000e8       __imp__ResumeThread@4      1001d0e8     kernel32:KERNEL32.dll
+ 0005:000000ec       __imp__CreateProcessW@40   1001d0ec     kernel32:KERNEL32.dll
+ 0005:000000f0       __imp__GetStartupInfoW@4   1001d0f0     kernel32:KERNEL32.dll
+ 0005:000000f4       __imp__OpenProcess@12      1001d0f4     kernel32:KERNEL32.dll
+ 0005:000000f8       __imp__VirtualAllocEx@20   1001d0f8     kernel32:KERNEL32.dll
+ 0005:000000fc       __imp__VirtualFreeEx@16    1001d0fc     kernel32:KERNEL32.dll
+ 0005:00000100       __imp__CreateToolhelp32Snapshot@8 1001d100     kernel32:KERNEL32.dll
+ 0005:00000104       __imp__Process32FirstW@8   1001d104     kernel32:KERNEL32.dll
+ 0005:00000108       __imp__Process32NextW@8    1001d108     kernel32:KERNEL32.dll
+ 0005:0000010c       __imp__Thread32First@8     1001d10c     kernel32:KERNEL32.dll
+ 0005:00000110       \177KERNEL32_NULL_THUNK_DATA 1001d110     kernel32:KERNEL32.dll
+ 0005:00000158       __imp__srand               1001d158     msvcrt:msvcrt.dll
+ 0005:0000015c       __imp___stricmp            1001d15c     msvcrt:msvcrt.dll
+ 0005:00000160       __imp___wcsupr_s           1001d160     msvcrt:msvcrt.dll
+ 0005:00000164       __imp__wcsstr              1001d164     msvcrt:msvcrt.dll
+ 0005:00000168       __imp__swprintf_s          1001d168     msvcrt:msvcrt.dll
+ 0005:0000016c       __imp___time64             1001d16c     msvcrt:msvcrt.dll
+ 0005:00000170       __imp___localtime64_s      1001d170     msvcrt:msvcrt.dll
+ 0005:00000174       __imp__rand                1001d174     msvcrt:msvcrt.dll
+ 0005:00000178       __imp__memcpy              1001d178     msvcrt:msvcrt.dll
+ 0005:0000017c       __imp__wcstoul             1001d17c     msvcrt:msvcrt.dll
+ 0005:00000180       __imp___wcsicmp            1001d180     msvcrt:msvcrt.dll
+ 0005:00000184       __imp__wcslen              1001d184     msvcrt:msvcrt.dll
+ 0005:00000188       __imp__wcscpy_s            1001d188     msvcrt:msvcrt.dll
+ 0005:0000018c       __imp__wcsrchr             1001d18c     msvcrt:msvcrt.dll
+ 0005:00000190       __imp__memcmp              1001d190     msvcrt:msvcrt.dll
+ 0005:00000194       __imp___errno              1001d194     msvcrt:msvcrt.dll
+ 0005:00000198       __imp__memset              1001d198     msvcrt:msvcrt.dll
+ 0005:0000019c       \177msvcrt_NULL_THUNK_DATA 1001d19c     msvcrt:msvcrt.dll
+ 0005:000001d4       __IMPORT_DESCRIPTOR_msvcrt 1001d1d4     msvcrt:msvcrt.dll
+ 0005:000001e8       __IMPORT_DESCRIPTOR_KERNEL32 1001d1e8     kernel32:KERNEL32.dll
+ 0005:000001fc       __IMPORT_DESCRIPTOR_ADVAPI32 1001d1fc     advapi32:ADVAPI32.dll
+ 0005:00000210       __NULL_IMPORT_DESCRIPTOR   1001d210     msvcrt:msvcrt.dll
+
+ entry point at        0002:0000028a
+
+ Static symbols
+
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     advapi32:ADVAPI32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffe0000       .debug$S                   10000000     SppExtComObjHook.exp
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0000:fffe0000       .debug$S                   10000000     msvcrt:msvcrt.dll
+ 0002:00000530       $$000000                   10011530     msvcrt:llmul.obj
+ 0002:00000580       $$000000                   10011580     msvcrt:ulldiv.obj
+ 0002:00000610       $$000000                   10011610     msvcrt:llrem.obj
+ 0002:000006f0       $$000000                   100116f0     msvcrt:chkstk.obj
+ 0003:00000000       ?AesKeyV5Blob@@3UAES_128_KEYBLOB@@B 10019000     crypto.obj
+ 0003:00000020       ?SBox@@3QBEB               10019020     crypto.obj
+ 0003:00000120       ?InvSBox@@3QBEB            10019120     crypto.obj
+ 0003:00000220       ?AesKeyV6@@3QBEB           10019220     crypto.obj
+ 0003:000002d0       ?AesKeyV4@@3QBEB           100192d0     crypto.obj
+ 0003:000004d0       ?HostOS@@3QBUKMSHostOS@@B  100194d0     kms.obj
+ 0003:00000530       ?pkeyconfig@@3QBUPKEYCONFIG@@B 10019530     kms.obj
+ 0003:000005c0       ?APP_ID_WINDOWS@@3U_GUID@@B 100195c0     kms.obj
+ 0003:000005d0       ?APP_ID_OFFICE14@@3U_GUID@@B 100195d0     kms.obj
+ 0003:000005e0       ?APP_ID_OFFICE15@@3U_GUID@@B 100195e0     kms.obj
+ 0003:000005f0       ?KMS_ID_OFFICE_2010@@3U_GUID@@B 100195f0     kms.obj
+ 0003:00000600       ?KMS_ID_OFFICE_2013@@3U_GUID@@B 10019600     kms.obj
+ 0003:00000610       ?KMS_ID_OFFICE_2016@@3U_GUID@@B 10019610     kms.obj
+ 0003:00000620       ?KMS_ID_OFFICE_2019@@3U_GUID@@B 10019620     kms.obj
+ 0003:00000630       ?KMS_ID_WINDOWS_VISTA@@3U_GUID@@B 10019630     kms.obj
+ 0003:00000640       ?KMS_ID_WINDOWS_7@@3U_GUID@@B 10019640     kms.obj
+ 0003:00000650       ?KMS_ID_WINDOWS_8_RETAIL@@3U_GUID@@B 10019650     kms.obj
+ 0003:00000660       ?KMS_ID_WINDOWS_8_VOLUME@@3U_GUID@@B 10019660     kms.obj
+ 0003:00000670       ?KMS_ID_WINDOWS_81_RETAIL@@3U_GUID@@B 10019670     kms.obj
+ 0003:00000680       ?KMS_ID_WINDOWS_81_VOLUME@@3U_GUID@@B 10019680     kms.obj
+ 0003:00000690       ?KMS_ID_WINDOWS_10_RETAIL@@3U_GUID@@B 10019690     kms.obj
+ 0003:000006a0       ?KMS_ID_WINDOWS_10_VOLUME@@3U_GUID@@B 100196a0     kms.obj
+ 0003:000006b0       ?KMS_ID_WINDOWS_10_UNKNOWN@@3U_GUID@@B 100196b0     kms.obj
+ 0003:000006c0       ?KMS_ID_WINDOWS_10_LTSB_2016@@3U_GUID@@B 100196c0     kms.obj
+ 0003:000006d0       ?KMS_ID_WINDOWS_10_LTSC_2019@@3U_GUID@@B 100196d0     kms.obj
+ 0003:000006e0       ?KMS_ID_WINDOWS_10_GOV@@3U_GUID@@B 100196e0     kms.obj
+ 0003:000006f0       ?KMS_ID_WINDOWS_SERVER_2008A@@3U_GUID@@B 100196f0     kms.obj
+ 0003:00000700       ?KMS_ID_WINDOWS_SERVER_2008B@@3U_GUID@@B 10019700     kms.obj
+ 0003:00000710       ?KMS_ID_WINDOWS_SERVER_2008C@@3U_GUID@@B 10019710     kms.obj
+ 0003:00000720       ?KMS_ID_WINDOWS_SERVER_2008R2A@@3U_GUID@@B 10019720     kms.obj
+ 0003:00000730       ?KMS_ID_WINDOWS_SERVER_2008R2B@@3U_GUID@@B 10019730     kms.obj
+ 0003:00000740       ?KMS_ID_WINDOWS_SERVER_2008R2C@@3U_GUID@@B 10019740     kms.obj
+ 0003:00000750       ?KMS_ID_WINDOWS_SERVER_2012@@3U_GUID@@B 10019750     kms.obj
+ 0003:00000760       ?KMS_ID_WINDOWS_SERVER_2012R2@@3U_GUID@@B 10019760     kms.obj
+ 0003:00000770       ?KMS_ID_WINDOWS_SERVER_2016@@3U_GUID@@B 10019770     kms.obj
+ 0003:00000780       ?KMS_ID_WINDOWS_SERVER_2019@@3U_GUID@@B 10019780     kms.obj
+ 0003:00002b10       .edata                     1001bb10     SppExtComObjHook.exp
+ 0003:00002b38       rgpv                       1001bb38     SppExtComObjHook.exp
+ 0003:00002b3c       rgszName                   1001bb3c     SppExtComObjHook.exp
+ 0003:00002b40       rgwOrd                     1001bb40     SppExtComObjHook.exp
+ 0003:00002b42       szName                     1001bb42     SppExtComObjHook.exp
+ 0003:00002b57       $N00001                    1001bb57     SppExtComObjHook.exp
+ 0005:000004b2       .idata$6                   1001d4b2     msvcrt:msvcrt.dll
+ 0005:00000778       .idata$6                   1001d778     kernel32:KERNEL32.dll
+ 0005:000008ae       .idata$6                   1001d8ae     advapi32:ADVAPI32.dll
+ 0006:00000000       __7242C389_ctype@h         1001e000     crypto.obj
+ 0006:00000001       __90A1F774_basetsd@h       1001e001     crypto.obj
+ 0006:00000002       __367CC694_corecrt_memcpy_s@h 1001e002     crypto.obj
+ 0006:00000003       __35D7DDB3_corecrt_memory@h 1001e003     crypto.obj
+ 0006:00000004       __DC9673E3_corecrt_wstring@h 1001e004     crypto.obj
+ 0006:00000005       __A29A7DFB_string@h        1001e005     crypto.obj
+ 0006:00000006       __3C23D660_guiddef@h       1001e006     crypto.obj
+ 0006:00000007       __AF541008_winnt@h         1001e007     crypto.obj
+ 0006:00000008       __76CD430D_winerror@h      1001e008     crypto.obj
+ 0006:00000009       __737D49DB_winbase@h       1001e009     crypto.obj
+ 0006:0000000a       __1B9502AC_winuser@h       1001e00a     crypto.obj
+ 0006:0000000b       __376EBCA0_winioctl@h      1001e00b     crypto.obj
+ 0006:0000000c       __24E9E95F_stdlib@h        1001e00c     crypto.obj
+ 0006:0000000d       __2CCBBE23_propidl@h       1001e00d     crypto.obj
+ 0006:0000000e       __AD360DAF_oleauto@h       1001e00e     crypto.obj
+ 0006:0000000f       __0396F1A5_stralign@h      1001e00f     crypto.obj
+ 0006:00000010       __EDBB2947_crypto@cpp      1001e010     crypto.obj
+ 0006:00000014       __7242C389_ctype@h         1001e014     kms.obj
+ 0006:00000015       __90A1F774_basetsd@h       1001e015     kms.obj
+ 0006:00000016       __367CC694_corecrt_memcpy_s@h 1001e016     kms.obj
+ 0006:00000017       __35D7DDB3_corecrt_memory@h 1001e017     kms.obj
+ 0006:00000018       __DC9673E3_corecrt_wstring@h 1001e018     kms.obj
+ 0006:00000019       __A29A7DFB_string@h        1001e019     kms.obj
+ 0006:0000001a       __3C23D660_guiddef@h       1001e01a     kms.obj
+ 0006:0000001b       __AF541008_winnt@h         1001e01b     kms.obj
+ 0006:0000001c       __76CD430D_winerror@h      1001e01c     kms.obj
+ 0006:0000001d       __737D49DB_winbase@h       1001e01d     kms.obj
+ 0006:0000001e       __1B9502AC_winuser@h       1001e01e     kms.obj
+ 0006:0000001f       __376EBCA0_winioctl@h      1001e01f     kms.obj
+ 0006:00000020       __24E9E95F_stdlib@h        1001e020     kms.obj
+ 0006:00000021       __2CCBBE23_propidl@h       1001e021     kms.obj
+ 0006:00000022       __AD360DAF_oleauto@h       1001e022     kms.obj
+ 0006:00000023       __0396F1A5_stralign@h      1001e023     kms.obj
+ 0006:00000024       __45F4AF76_corecrt_wtime@h 1001e024     kms.obj
+ 0006:00000025       __8AA3BE86_time@h          1001e025     kms.obj
+ 0006:00000026       __F66CEB67_corecrt_stdio_config@h 1001e026     kms.obj
+ 0006:00000027       __101834BA_corecrt_wstdio@h 1001e027     kms.obj
+ 0006:00000028       __1170C9B3_kms@cpp         1001e028     kms.obj
+ 0006:0000002d       __7242C389_ctype@h         1001e02d     SppExtComObjHook.obj
+ 0006:0000002e       __90A1F774_basetsd@h       1001e02e     SppExtComObjHook.obj
+ 0006:0000002f       __367CC694_corecrt_memcpy_s@h 1001e02f     SppExtComObjHook.obj
+ 0006:00000030       __35D7DDB3_corecrt_memory@h 1001e030     SppExtComObjHook.obj
+ 0006:00000031       __DC9673E3_corecrt_wstring@h 1001e031     SppExtComObjHook.obj
+ 0006:00000032       __A29A7DFB_string@h        1001e032     SppExtComObjHook.obj
+ 0006:00000033       __3C23D660_guiddef@h       1001e033     SppExtComObjHook.obj
+ 0006:00000034       __AF541008_winnt@h         1001e034     SppExtComObjHook.obj
+ 0006:00000035       __76CD430D_winerror@h      1001e035     SppExtComObjHook.obj
+ 0006:00000036       __737D49DB_winbase@h       1001e036     SppExtComObjHook.obj
+ 0006:00000037       __1B9502AC_winuser@h       1001e037     SppExtComObjHook.obj
+ 0006:00000038       __376EBCA0_winioctl@h      1001e038     SppExtComObjHook.obj
+ 0006:00000039       __24E9E95F_stdlib@h        1001e039     SppExtComObjHook.obj
+ 0006:0000003a       __2CCBBE23_propidl@h       1001e03a     SppExtComObjHook.obj
+ 0006:0000003b       __AD360DAF_oleauto@h       1001e03b     SppExtComObjHook.obj
+ 0006:0000003c       __0396F1A5_stralign@h      1001e03c     SppExtComObjHook.obj
+ 0006:0000003d       __8C200215_imagehlp@h      1001e03d     SppExtComObjHook.obj
+ 0006:0000003e       __F66CEB67_corecrt_stdio_config@h 1001e03e     SppExtComObjHook.obj
+ 0006:0000003f       __101834BA_corecrt_wstdio@h 1001e03f     SppExtComObjHook.obj
+ 0006:00000040       __4CDD1C48_SppExtComObjHook@cpp 1001e040     SppExtComObjHook.obj
+ 0006:00000045       __7242C389_ctype@h         1001e045     SppExtComObjPatcher.obj
+ 0006:00000046       __90A1F774_basetsd@h       1001e046     SppExtComObjPatcher.obj
+ 0006:00000047       __367CC694_corecrt_memcpy_s@h 1001e047     SppExtComObjPatcher.obj
+ 0006:00000048       __35D7DDB3_corecrt_memory@h 1001e048     SppExtComObjPatcher.obj
+ 0006:00000049       __DC9673E3_corecrt_wstring@h 1001e049     SppExtComObjPatcher.obj
+ 0006:0000004a       __A29A7DFB_string@h        1001e04a     SppExtComObjPatcher.obj
+ 0006:0000004b       __3C23D660_guiddef@h       1001e04b     SppExtComObjPatcher.obj
+ 0006:0000004c       __AF541008_winnt@h         1001e04c     SppExtComObjPatcher.obj
+ 0006:0000004d       __76CD430D_winerror@h      1001e04d     SppExtComObjPatcher.obj
+ 0006:0000004e       __737D49DB_winbase@h       1001e04e     SppExtComObjPatcher.obj
+ 0006:0000004f       __1B9502AC_winuser@h       1001e04f     SppExtComObjPatcher.obj
+ 0006:00000050       __376EBCA0_winioctl@h      1001e050     SppExtComObjPatcher.obj
+ 0006:00000051       __24E9E95F_stdlib@h        1001e051     SppExtComObjPatcher.obj
+ 0006:00000052       __2CCBBE23_propidl@h       1001e052     SppExtComObjPatcher.obj
+ 0006:00000053       __AD360DAF_oleauto@h       1001e053     SppExtComObjPatcher.obj
+ 0006:00000054       __0396F1A5_stralign@h      1001e054     SppExtComObjPatcher.obj
+ 0006:00000055       __F66CEB67_corecrt_stdio_config@h 1001e055     SppExtComObjPatcher.obj
+ 0006:00000056       __101834BA_corecrt_wstdio@h 1001e056     SppExtComObjPatcher.obj
+ 0006:00000057       __022B0838_SppExtComObjPatcher@cpp 1001e057     SppExtComObjPatcher.obj
+
+ Exports
+
+  ordinal    name
+
+        1    ?PatcherMain@@YGXPAUHWND__@@PAUHINSTANCE__@@PA_WH@Z (void __stdcall PatcherMain(struct HWND__ *,struct HINSTANCE__ *,wchar_t *,int))
+               exported name: PatcherMainW

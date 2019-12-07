@@ -1,0 +1,8 @@
+﻿  crypto.cpp
+  kms.cpp
+  SppExtComObjHook.cpp
+  SppExtComObjPatcher.cpp
+  Generating Code...
+     Creating library bin\Debug\Win32\SppExtComObjHook.lib and object bin\Debug\Win32\SppExtComObjHook.exp
+  SppExtComObjHook.vcxproj -> C:\Users\Administrator\Documents\SppExtComObjHook-DLL-20181024\SppExtComObjHook\bin\Debug\Win32\SppExtComObjHook.dll
+          1 file(s) copied.
