@@ -1,5 +1,5 @@
 # SppExtComObjHook
 
-Windows实施KMS激活时会通过sppsvc.exe调用SppExtComObj.exe设置KMS服务器地址及主机.
+Windows实施KMS激活时会通过sppsvc.exe调用SppExtComObj.exe设置KMS服务器地址及端口.
 而其中关键的函数就是RpcStringBindingComposeW.
 这个原理就是通过HOOK RpcStringBindingComposeW设置KMS服务器为本地:127.0.0.1,并通过HOOK RpcBindingFromStringBindingW,NdrClientCall2模拟本地KMS服务器来欺骗Windows激活机制,使其认为该IP有效而激活KMS成功.
